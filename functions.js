@@ -193,6 +193,13 @@ function minimum(x, y){
  * @param {number} n
  * @return {boolean} the number is odd
  */
+function isOdd(n){
+
+  
+
+}
+
+
 
 
 /**
