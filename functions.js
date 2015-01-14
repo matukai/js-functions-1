@@ -77,7 +77,6 @@ function square(x){
   return x * x;
 }
 
-
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -86,6 +85,34 @@ function square(x){
  * @param {number} y
  * @return {number} the result
  */
+
+
+function calculate(operation, x, y){
+  if(operation === "add"){
+    var sum = x + y;
+    console.log(x + " + " + y + " = " + sum);
+    return sum;
+  } else if(operation === "subtract"){
+  var diff = x - y;
+  console.log(x + " - " + y + " = " + diff);
+  return diff;
+  } else if (operation === "multiply"){
+  var product = x * y;
+  console.log(x + " * " + y + " = " + product);
+  return product;
+  } else if (operation === "divide"){
+  var quotient = x / y;
+    console.log(x + " / " + y + " = " + quotient);
+    return quotient;
+  }
+}
+
+
+ 
+
+
+
+
 
 /**
  * Returns true if `a` is greater than `b`.
