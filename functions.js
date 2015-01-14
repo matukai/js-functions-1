@@ -221,14 +221,7 @@ function letterGrade(score, total){
   }else if (grade >=0 && grade <60){
     return "F";
   }
-  // }else{
-  //   return false;
-  // }
 }
-
- 
-
-
 
 /**
  * Checks if a `restaurant` object has are `views` field.
@@ -243,6 +236,12 @@ function letterGrade(score, total){
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+function combine(word1, word2){
+  var text1 = "word1";
+  var text2 = "word2";
+  return word1 + " " + word2;
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
