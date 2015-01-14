@@ -177,16 +177,12 @@ function minimum(x, y){
  * @return {boolean} the number is even
  */
  function isEven(n){
-  if(n === 0){
+  if((n % 2) === 0){
     return true;
-  }else if (n === 1){
-    return false;
-  }else if(n < 0){
-    return isEven(-n);
   }else{
-    return isEven(n-2);
-  }
- } 
+    return false;
+  } 
+}
 
 /**
  * Returns true if `n` is odd.
@@ -194,9 +190,11 @@ function minimum(x, y){
  * @return {boolean} the number is odd
  */
 function isOdd(n){
-
-  
-
+  if((n % 2) !== 0){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 
