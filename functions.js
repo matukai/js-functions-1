@@ -169,19 +169,31 @@ function minimum(x, y){
  function maximum(x, y){
   return Math.max(x, y);
  }
- 
+
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
+ function isEven(n){
+  if(n === 0){
+    return true;
+  }else if (n === 1){
+    return false;
+  }else if(n < 0){
+    return isEven(-n);
+  }else{
+    return isEven(n-2);
+  }
+ } 
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
+
 
 /**
  * Returns a letter grade.
