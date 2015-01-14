@@ -106,20 +106,20 @@ function calculate(operation, x, y){
     return quotient;
   }
 }
-
-
- 
-
-
-
-
-
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+function isGreaterThan(a, b){
+  if(a > b){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 
 /**
  * Returns true if `a` is less than `b`.
