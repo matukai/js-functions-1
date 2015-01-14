@@ -120,13 +120,19 @@ function isGreaterThan(a, b){
   }
 }
 
-
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+function isLessThan(a, b){
+  if(a < b){
+    return true;
+  }else{
+    return false;
+  }
+} 
 
 /**
  * Returns true if `a` and `b` are equal.
