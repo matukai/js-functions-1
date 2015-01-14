@@ -23,7 +23,7 @@ function numberToString(number){
  * @return {number}
  */
  function decrease(n){
-  return n -1;
+  return n - 1;
  }
 
 /**
@@ -32,6 +32,9 @@ function numberToString(number){
  * @param {number} y
  * @return {number} the sum
  */
+ function add(x, y){
+  return x + y;  
+ }
 
 /**
  * Subtracts the second number from the first.
