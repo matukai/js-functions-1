@@ -230,6 +230,16 @@ function letterGrade(score, total){
  * @param {object} restaurant represents a restaurant
  */
 
+
+function incrementReviews(restaurant){
+  if(restaurant.hasOwnProperty("reviews")){
+    restaurant.reviews += 1;
+  }else{
+    restaurant.reviews = 1;
+  }
+  return restaurant;
+}
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
@@ -250,3 +260,6 @@ function combine(word1, word2){
  * @param {number} radius
  * @return {object} circle
  */
+
+
+
