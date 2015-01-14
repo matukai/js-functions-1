@@ -159,13 +159,17 @@ function minimum(x, y){
   return Math.min(x, y);
 }
 
-
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
+
+ function maximum(x, y){
+  return Math.max(x, y);
+ }
+ 
 
 /**
  * Returns true if `n` is even.
