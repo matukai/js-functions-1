@@ -196,10 +196,6 @@ function isOdd(n){
     return false;
   }
 }
-
-
-
-
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -211,6 +207,28 @@ function isOdd(n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+
+function letterGrade(score, total){ 
+  var grade = (score / total) * 100;
+  if(grade >= 90 && grade <= 100){  
+    return "A";
+  }else if (grade >=80 && grade <90){
+    return "B";
+  }else if (grade >=70 && grade <80){
+    return "C";
+  }else if (grade >=60 && grade <70){
+    return "D";
+  }else if (grade >=0 && grade <60){
+    return "F";
+  }
+  // }else{
+  //   return false;
+  // }
+}
+
+ 
+
+
 
 /**
  * Checks if a `restaurant` object has are `views` field.
