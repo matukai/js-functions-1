@@ -3,9 +3,16 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-function numberToString(number){
+
+/*function numberToString(number){
  return number.toString(); 
 }
+*/
+
+function numberToString(number){
+  return number.toString();
+}
+console.log(numberToString(100));
 
 /**
  * Adds one to a given number.
@@ -13,18 +20,30 @@ function numberToString(number){
  * @return {number}
  */
 
- function increase(n){
+/* function increase(n){
    return n + 1;
- }
+ }*/
+
+function increase(number){
+  return number + 1;
+}
+
+console.log(add(49));
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
- function decrease(n){
+
+/* function decrease(n){
   return n - 1;
- }
+ }*/
+
+function decrease(number){
+  return number - 1;
+}
+console.log(subtract(50));
 
 /**
  * Adds two numbers.
@@ -32,9 +51,11 @@ function numberToString(number){
  * @param {number} y
  * @return {number} the sum
  */
+
  function add(x, y){
   return x + y;  
  }
+
 
 /**
  * Subtracts the second number from the first.
@@ -42,10 +63,10 @@ function numberToString(number){
  * @param {number} y
  * @return {number} the difference
  */
+
 function subtract(x, y){
   return x - y;
 }
-
 
 /**
  * Multiplies two numbers.
@@ -53,9 +74,15 @@ function subtract(x, y){
  * @param {number} y
  * @return {number} the product
  */
-function multiply(x, y){
+
+/*function multiply(x, y){
+  return x * y;
+}*/
+
+function multiply(x,y){
   return x * y;
 }
+console.log(multiply(25,4));
 
 /**
  * Divides the first number by the second.
@@ -64,18 +91,29 @@ function multiply(x, y){
  * @return {number} the quotient
  */
 
-function divide(x, y){
+/*function divide(x, y){
+  return x / y;
+}*/
+
+function divide(x,y){
   return x / y;
 }
+console.log(100,4);
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-function square(x){
+
+/*function square(x){
   return x * x;
+}*/
+
+function square(x,y){
+  return x * x; 
 }
+console.log(multiply(4));
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -86,8 +124,29 @@ function square(x){
  * @return {number} the result
  */
 
+function calculate(operation, x, y ){
+  if(operation === "add"){
+    var sum = x + y;
+    console.log(x + " + " + y + " = " + sum);
+    return sum;
+  }else if(operation === "subtract"){
+    var diff = x - y;
+    console.log(x + " - " + y + " = " + diff)
+    return diff;
+  }else if(operation === "multiply"){
+    var product = x * y;
+    console.log(x + " * " + y + " = " + product)
+    return product;
+  }else if(operation === "divide"){
+    var quotient = x / y;
+    console.log(x + " / " + y + " = " + quotient)
+    return quotient;
+  }
+}
+console.log(calculate("divide",100,4));
 
-function calculate(operation, x, y){
+
+/*function calculate(operation, x, y){
   if(operation === "add"){
     var sum = x + y;
     console.log(x + " + " + y + " = " + sum);
@@ -105,13 +164,24 @@ function calculate(operation, x, y){
     console.log(x + " / " + y + " = " + quotient);
     return quotient;
   }
-}
+}*/
+
+
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+
+/*function isGreaterThan(a,b){
+  if( a > b){
+    return true;
+  }else{
+    return false;
+  }
+}*/
+
 function isGreaterThan(a, b){
   if(a > b){
     return true;
@@ -126,13 +196,22 @@ function isGreaterThan(a, b){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-function isLessThan(a, b){
+
+/*function isLessThan(a, b){
   if(a < b){
     return true;
   }else{
     return false;
   }
-} 
+} */
+
+function isLessThan(a,b){
+  if(a < b){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -148,6 +227,9 @@ function areEqual(a, b){
     return false;
   }
 }
+
+
+
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
@@ -158,6 +240,7 @@ function areEqual(a, b){
 function minimum(x, y){
   return Math.min(x, y);
 }
+console.log("Math minimum " + minimum(-1,90));
 
 /**
  * Returns the largest value of two numbers.
@@ -166,9 +249,14 @@ function minimum(x, y){
  * @return {number} the largest number
  */
 
- function maximum(x, y){
+/* function maximum(x, y){
   return Math.max(x, y);
- }
+ }*/
+
+function maximum(x,y){
+  return Math.max(x,y);
+}
+console.log("Math Maximum " + maximum(4894903,333));
 
 
 /**
@@ -176,26 +264,47 @@ function minimum(x, y){
  * @param {number} n
  * @return {boolean} the number is even
  */
- function isEven(n){
+
+/* function isEven(n){
   if((n % 2) === 0){
     return true;
   }else{
     return false;
   } 
+}*/
+
+function isEven(n){
+  if((n%2) === 0){
+    return true;
+  }else{
+    return false;
+  }
 }
+console.log(isEven(500001));
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-function isOdd(n){
+
+/*function isOdd(n){
   if((n % 2) !== 0){
     return true;
   }else{
     return false;
   }
+}*/
+
+function isOdd(n){
+  if((n%2) !== 0){
+    return true;
+  }else{
+    return false;
+  }
 }
+console.log(isOdd(3));
+
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -208,6 +317,22 @@ function isOdd(n){
  * @return {string} the score represented as a letter grade
  */
 
+/*function letterGrade(score,maxScore){
+  var grade = (score/total) * 100;
+  if(grade >= 90 && grade <=100){
+    return "A";
+  }else if(grade >= 80 && grade <90){
+    return "B";
+  }else if(grade >= 70 && grade <80){
+    return "C";
+  }else if (grade >= 60 && grade <70){
+    return "D";
+  }else if (grade >= 0 && grade < 60){
+    return "F";
+  }
+}
+*/
+
 function letterGrade(score, total){ 
   var grade = (score / total) * 100;
   if(grade >= 90 && grade <= 100){  
@@ -219,6 +344,8 @@ function letterGrade(score, total){
   }else if (grade >=60 && grade <70){
     return "D";
   }else if (grade >=0 && grade <60){
+    return "F";
+  }else if (grade <= 0){
     return "F";
   }
 }
@@ -261,11 +388,11 @@ function combine(word1, word2){
  * @return {object} circle
  */
 
-// function getPi() {
-//    return Math.PI
-// }
+function getPi() {
+   return Math.PI
+}
 
-// getPi() // 3.141592653589793
+getPi() // 3.141592653589793
 
 
  function createCircle(radius){
